@@ -10,6 +10,50 @@
   <link href="css/main.css" rel="stylesheet">
   <script>
     // JAVASCRIPT
+    function elementChange() {
+      let aElements = document.getElementsByTagName("a");
+      alert("adding element");
+      aElements[0].setAttribute("name", "title");
+      console.log(aElements);
+      return aElements;
+    }
+
+    function findList() {
+      const list = Array.from(document.querySelectorAll('ul>li'));
+      alert("adding class");
+
+      list[1].setAttribute("class", "newClass");
+      console.log(list);
+
+      return list;
+    }
+
+    function addDiv() {
+      var newDiv = document.createElement("div");
+
+      newDiv.setAttribute("class", "text-modify");
+      var currentDiv = document.getElementsByTagName("section");
+
+      document.body.insertBefore(newDiv, currentDiv);
+
+    }
+
+    function openFunction() {
+      var x = document.getElementById("myFunction");
+
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      }
+      else if (x.style.display === "none") {
+        x.style.display = "block";
+      }
+    }
+
+    function viewResume() {
+      alert("Thank you for viewing my resume!");
+    }
+
+
   </script>
 </head>
 <body>
@@ -69,7 +113,24 @@
       </div>
       <!--// ENDS: SOCIAL MEDIA -->
     </aside>
+
+    <button name="openFunction" onclick="openFunction()">Unhide an action!</button>
+
+    <div id="myFunction" style="display: none; color: white; background-color: dimgray; text-align: center; width: 300px; height: 100px;">
+      This is the action you revealed!
+    </div>
+
+    <button id="alert" onclick="viewResume()">
+      View Resume
+    </button>
+
+    <button name="activateElementChange" onclick="elementChange()">Change elements!</button>
+
+    <button name="activateAddClass" onclick="findList()">Add class!</button>
+
+    <button name="activateAddDiv" onclick="addDiv()">Add div!</button>
   </div>
+
 
 </body>
 </html>
