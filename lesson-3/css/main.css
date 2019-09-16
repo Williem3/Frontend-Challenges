@@ -7,10 +7,450 @@
 
 /* WRAPPER: Reset, do not modify */
 .wrapper {
-    width: 650px;
-    height: 540px;
-    margin: 50px auto 0;
-    border: 2px solid gray;
+    display: flex;
+
+    justify-content: flex-start;
+}
+
+h1 {
+    color: white;
+}
+
+.layout1-div1 {
+    background-color: black;
+    width: 400px;
+    height:400px;
+    justify-content: flex-start;
+
+}
+.layout1-div2 {
+    background-color: black;
+    width: 400px;
+    height: 400px;
+    justify-self: flex-end;
+    margin-left: auto;
+}
+.layout1-div3 {
+    background-color: black;
+    width: 400px;
+    height:400px;
+    justify-self: flex-end;
+    margin-left: 10px;
+}
+
+.wrapper2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.layout2-div1 {
+     background-color: black;
+     width: 400px;
+     height:400px;
+     align-self: flex-start;
+ }
+.layout2-div2 {
+    background-color: black;
+    width: 400px;
+    height:400px;
+    align-self: center;
+}
+.layout2-div3 {
+    background-color: black;
+    width: 400px;
+    height:400px;
+    align-self: flex-end;
+}
+
+.wrapper3 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+.layout3-div1 {
+    background-color: black;
+    width: 400px;
+    height:400px;
+    align-self: center;
+}
+.layout3-div2 {
+    background-color: grey;
+    width: 200px;
+    height:200px;
+    align-self: center;
+}
+
+.wrapper4 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.layout4-div1 {
+    background-color: black;
+    width: 400px;
+    height:400px;
+}
+.layout4-div2 {
+    background-color: grey;
+    width: 400px;
+    height:400px;
+    margin-left: 200px;
+    margin-top: 160px;
+}
+
+.wrapper5 {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.layout5-div1 {
+    background-color: black;
+    width: 400px;
+    height:400px;
+    align-self: flex-start;
+}
+.layout5-div2 {
+    background-color: black;
+    width: 400px;
+    height:400px;
+    align-self: center;
+}
+.layout5-div3 {
+    background-color: black;
+    width: 400px;
+    height:400px;
+    align-self: flex-end;
+}
+
+.wrapper6 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+.layout6-div1 {
+    background-color: dimgrey;
+    height: 300px;
+    width: 600px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: column-reverse;
+    color: white;
+}
+.layout6-div2 {
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    color: white;
+}
+
+.layout6-div3 {
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    color: white;
+    align-self: flex-end;
+}
+
+.layout7-div1 {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: dimgrey;
+    flex-direction: column;
+  }
+.layout7-div2 {
+    height: 100px;
+    width: 100px;
+    color:white;
+}
+.layout7-div3 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    align-self: flex-end;
+    color:white;
+}
+
+
+.layout8-div1 {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: dimgrey;
+    flex-direction: row;
+}
+.layout8-div2 {
+    height: 100px;
+    width: 100px;
+    color: white;
+    justify-self: flex-end;
+}
+.layout8-div3 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    align-self: flex-start;
+    color: white;
+}
+
+
+
+.wrapper9 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.layout9-div1 {
+    background-color: dimgrey;
+    height: 450px;
+    width: 200px;
+    align-self: flex-end;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+    align-content: space-between;
+    justify-content: center ;
+}
+.layout9-div2 {
+    background-color: black;
+    height: 125px;
+    width: 125px;
+    color: white;
+}
+
+.layout9-div3 {
+    background-color: black;
+    height: 125px;
+    width: 125px;
+    color: white;
+}
+
+.wrapper10 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
+
+.layout10-div1 {
+    background-color: dimgrey;
+    height: 200px;
+    width: 450px;
+    display: flex;
+    justify-content: space-around;
+}
+.layout10-div2 {
+    background-color: black;
+    height: 125px;
+    width: 125px;
+    color: white;
+    margin-top: 35px;
+}
+
+.layout10-div3 {
+    background-color: black;
+    height: 125px;
+    width: 125px;
+    color: white;
+    margin-top: 35px;
+}
+
+
+.wrapper11 {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.layout11-div1 {
+    background-color: dimgrey;
+    height: 450px;
+    width: 200px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.layout11-div2 {
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+
+
+.layout11-div3 {
+    background-color: grey;
+    height: 100px;
+    width: 100px;
+    color:white;
+    align-self: flex-end;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.wrapper12 {
+
+}
+.layout12-div1 {
+    position: relative;
+    background-color: dimgrey;
+    height: 450px;
+    width: 200px;
+    color: white;
+    z-index: 0;
+ }
+.layout12-div2 {
+    background-color: black;
+    position: absolute;
+    height: 300px;
+    width: 200px;
+    color: white;
+    z-index: 1;
+    bottom: 450px;
+    left: 170px;
+}
+.layout12-div3 {
+    position: absolute;
+    background-color: darkgrey;
+    height: 200px;
+    width: 200px;
+    color: white;
+    z-index: 2;
+    bottom: 375px;
+    left: 75px
+
+}
+
+.wrapper13 {
+
+}
+.layout13-div1 {
+    position: relative;
+    background-color: dimgrey;
+    height: 200px;
+    width: 200px;
+    color: white;
+    z-index: 0;
+
+}
+.layout13-div2 {
+    position: absolute;
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    color: white;
+    z-index: 1;
+    top: 100px;
+    left: 100px;
+
+}
+.layout13-div3 {
+    position: absolute;
+    background-color: dimgrey;
+    height: 200px;
+    width: 200px;
+    color: white;
+    z-index: 2;
+    top: 200px;
+    left: 200px;
+
+}
+.layout13-div4 {
+    position: absolute;
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    color: white;
+    z-index: 3;
+    top: 300px;
+    left: 300px;
+
+}
+.layout13-div5 {
+    position: absolute;
+    background-color: dimgrey;
+    height: 200px;
+    width: 200px;
+    color: white;
+    z-index: 4;
+    top: 400px;
+    left: 400px;
+
+}
+
+.wrapper14 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.layout14-div1 {
+    display: flex;
+    height: 200px;
+    width: 200px;
+    background-color: dimgrey;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.layout14-div2 {
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    align-self: flex-start;
+    color:white;
+}
+
+.wrapper15 {
+
+}
+
+.layout15-div1 {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: dimgrey;
+    margin-bottom: 25px;
+    color: white;
+
+}
+.layout15-div2 {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    left: 750px;
+    top: 5px;
+    color: white;
+
+}
+.layout15-div3 {
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background-color: dimgrey;
+    left: 500px;
+    top: 300px;
+    color: white;
+
+}
+.layout15-div4 {
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    background-color: black;
+    top: 550px;
+    color: white;
 }
 
 
